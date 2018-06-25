@@ -41,7 +41,7 @@
             this.btn_1.TabIndex = 0;
             this.btn_1.Text = "вопрос №1";
             this.btn_1.UseVisualStyleBackColor = true;
-            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
+            this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
             // btn_2
             // 
@@ -51,7 +51,7 @@
             this.btn_2.TabIndex = 1;
             this.btn_2.Text = "вопрос №2";
             this.btn_2.UseVisualStyleBackColor = true;
-            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
+            this.btn_2.Click += new System.EventHandler(this.Btn_2_Click);
             // 
             // label1
             // 

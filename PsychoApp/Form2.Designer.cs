@@ -41,7 +41,7 @@
             this.btn2_1.TabIndex = 0;
             this.btn2_1.Text = "закрыть";
             this.btn2_1.UseVisualStyleBackColor = true;
-            this.btn2_1.Click += new System.EventHandler(this.btn2_1_Click);
+            this.btn2_1.Click += new System.EventHandler(this.Btn2_1_Click);
             // 
             // btn2_2
             // 
@@ -51,7 +51,7 @@
             this.btn2_2.TabIndex = 1;
             this.btn2_2.Text = "повтор";
             this.btn2_2.UseVisualStyleBackColor = true;
-            this.btn2_2.Click += new System.EventHandler(this.btn2_2_Click);
+            this.btn2_2.Click += new System.EventHandler(this.Btn2_2_Click);
             // 
             // label1
             // 
@@ -61,7 +61,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // Form2
             // 
