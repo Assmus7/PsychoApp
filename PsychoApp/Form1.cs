@@ -65,75 +65,91 @@ namespace PsychoApp
             }
             else if (btn_1.Text == "вопрос №15")
             {
+                Hide();
                 Name_psycho = Name_psycho + "T";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №17")
             {
+                Hide();
                 Name_psycho = Name_psycho + "T";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №19")
             {
+                Hide();
                 Name_psycho = Name_psycho + "T";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №21")
             {
+                Hide();
                 Name_psycho = Name_psycho + "T";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №23")
             {
+                Hide();
                 Name_psycho = Name_psycho + "N";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №25")
             {
+                Hide();
                 Name_psycho = Name_psycho + "N";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №27")
             {
+                Hide();
                 Name_psycho = Name_psycho + "N";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_1.Text == "вопрос №29")
             {
+                Hide();
                 Name_psycho = Name_psycho + "N";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
         }
 
@@ -183,84 +199,96 @@ namespace PsychoApp
             }
             else if (btn_2.Text == "вопрос №16")
             {
+                Hide();
                 Name_psycho = Name_psycho + "F";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №18")
             {
+                Hide();
                 Name_psycho = Name_psycho + "F";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №20")
             {
+                Hide();
                 Name_psycho = Name_psycho + "F";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №22")
             {
+                Hide();
                 Name_psycho = Name_psycho + "F";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №24")
             {
+                Hide();
                 Name_psycho = Name_psycho + "S";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №26")
             {
+                Hide();
                 Name_psycho = Name_psycho + "S";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №28")
             {
+                Hide();
                 Name_psycho = Name_psycho + "S";
                 Form2 newForm = new Form2
                 {
                     Owner = this
                 };
                 newForm.ShowDialog();
+                Close();
             }
             else if (btn_2.Text == "вопрос №30")
             {
+                Hide();
                 Name_psycho = Name_psycho + "S";
                 //MessageBox.Show(Name_psycho,"Результат");
                 Form2 newForm = new Form2();
                 newForm.Owner = this;
                 newForm.ShowDialog();
+                Close();
                 //Name_psycho = newForm.Name_form2;
             }
         }
 
         private void Label1_Click(object sender, EventArgs e)
         {
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

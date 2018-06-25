@@ -74,6 +74,7 @@
             this.Controls.Add(this.btn2_1);
             this.Name = "Form2";
             this.Text = "Результат";
+            this.Load += new System.EventHandler(this.Label1_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

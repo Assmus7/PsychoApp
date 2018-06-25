@@ -13,19 +13,9 @@ namespace PsychoApp
     public partial class Form2 : Form
     {
 
-        public string Name_form2 { get; set; }
         public Form2()
         {
             InitializeComponent();
-            //label1.Text = Name_form2;
-            //Form1 main = this.Owner as Form1;
-            //if (main != null)
-            //{
-            //    string s = main.Name_psycho;
-            //    main.Name_psycho = Name_form2;
-            //}
-
-            //label1.Text = Name_form2;
         }
         
         private void Btn2_1_Click(object sender, EventArgs e)
@@ -38,16 +28,19 @@ namespace PsychoApp
             {
 
             }
-
         }
         
         private void Btn2_2_Click(object sender, EventArgs e)
         {
+            Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            Close();
         }
 
         private void Label1_Click(object sender, EventArgs e)
         {
-            Form1 g = (Form1)this.Owner;
+            Form1 g = (Form1)Owner;
             label1.Text = g.Name_psycho;
         }
     }
