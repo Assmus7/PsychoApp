@@ -75,42 +75,55 @@ namespace PsychoApp
                 Name_psycho = Name_psycho + "T";
                 Form2 newForm = new Form2();
                 newForm.Show();
-                //newForm.label1_Click
             }
             else if (btn_1.Text == "вопрос №17")
             {
                 Name_psycho = Name_psycho + "T";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №19")
             {
                 Name_psycho = Name_psycho + "T";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №21")
             {
                 Name_psycho = Name_psycho + "T";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №23")
             {
                 Name_psycho = Name_psycho + "N";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №25")
             {
                 Name_psycho = Name_psycho + "N";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №27")
             {
                 Name_psycho = Name_psycho + "N";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho, "Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_1.Text == "вопрос №29")
             {
                 Name_psycho = Name_psycho + "N";
-                MessageBox.Show(Name_psycho,"Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
         }
 
@@ -169,65 +182,65 @@ namespace PsychoApp
             else if (btn_2.Text == "вопрос №16")
             {
                 Name_psycho = Name_psycho + "F";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №18")
             {
                 Name_psycho = Name_psycho + "F";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №20")
             {
                 Name_psycho = Name_psycho + "F";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №22")
             {
                 Name_psycho = Name_psycho + "F";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №24")
             {
                 Name_psycho = Name_psycho + "S";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №26")
             {
                 Name_psycho = Name_psycho + "S";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №28")
             {
                 Name_psycho = Name_psycho + "S";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
             else if (btn_2.Text == "вопрос №30")
             {
                 Name_psycho = Name_psycho + "S";
-                MessageBox.Show(Name_psycho, "Результат");
+                //MessageBox.Show(Name_psycho,"Результат");
+                Form2 newForm = new Form2();
+                newForm.Show();
             }
         }
 
         private void Label1_Click(object sender, EventArgs e)
         {
         }
-
-        private void Btn_3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_6_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

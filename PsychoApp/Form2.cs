@@ -19,7 +19,15 @@ namespace PsychoApp
 
         private void btn2_1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Вы уверены?", "?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                Close();
+            }
+
         }
 
         private void btn2_2_Click(object sender, EventArgs e)
