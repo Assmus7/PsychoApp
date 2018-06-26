@@ -15,55 +15,91 @@ namespace PsychoApp
         public Form1()
         {
             InitializeComponent();
+
+            btn_1.Text = v1;
+            btn_2.Text = v2;
+
         }
 
         public string Name_psycho { get; set; }
+        private string v1 = "Предпочитаете действовать по ситуации, импровизировать. Легко меняете планы. Умеете проявить гибкость и использовать шанс";
+        private string v2 = "Предпочитаете действовать по намеченному плану, независимо от ситуации. Необходимость менять планы на ходу вас напрягает. Ваши мнения и решения устойчивы";
+        private string v3 = "У меня развитая интуиция. Умею уступить в мелочах сейчас, чтобы дробится цели позже. Весь мир - в будущем.";
+        private string v4 = "Ценю то, что имею сейчас. Нужно жить сегодня, а не откладывать на потом";
+        private string v5 = "Рассудок; холодный анализ; логика; объективный подход; трезвое мышление; непредвзятость; сдержанность.";
+        private string v6 = "Чувства, эмоции; сопереживание людям; неравнодушие; сердечность.";
+        private string v7 = "Общителен со всеми. Легко завожу знакомства и берусь за все.";
+        private string v8 = "Общителен только с близкими. Душевный покой. Переживания в себе.";
+        private string v9 = "Воля; преодоление трудностей; сила и красота.";
+        private string v10 = "Ощущение момента; интересы близких; эстетика.";
+        private string v11 = "Правильные действия.";
+        private string v12 = "Анализ и размышление.";
+        private string v13 = "Очень часто везде открыто выражаю эмоции.";
+        private string v14 = "Стараюсь скрывать и сдерживать эмоции.";
+        private string v15 = "Вдохновляющие идеи; начинания и теории.";
+        private string v16 = "Интересные, талантливые люди, общение.";
+        private string v17 = "Скептическое предвидение; логика важнее.";
+        private string v18 = "Эмоциональное предчувствие; поэтичность.";
+        private string v19 = "Логика действий это главное, чувства вторичны.";
+        private string v20 = "Понимаю отношения между людьми. Знаю как ими манипулировать.";
+        private string v21 = "Практичность; умелые руки; независимость.";
+        private string v22 = "Теплое общение и эмоции. Тяга к удовольствиям.";
+        private string v23 = "Быстрота и эффективность.";
+        private string v24 = "Добросовестность дел; надежность, качество.";
+        private string v25 = "Мягкий и демократичный исследователь.";
+        private string v26 = "Практик с сильной волей.";
+        private string v27 = "Хорошая интуиция, сопереживание, драматизм.";
+        private string v28 = "Радость, эмоции, доброе настроение.";
+        private string v29 = "Объективность. Предвидя последствия, стараюсь не допускать и погашать конфликты.";
+        private string v30 = "Субъективность. Исходя из своего опыта, могу пойти на конфликт чтобы защитить своих.";
+
 
         private void Btn_1_Click(object sender, EventArgs e)
         {
-            if (btn_1.Text == "вопрос №1")
+
+            if (btn_1.Text == v1)
             {
                 Name_psycho = Name_psycho + "P";
-                btn_1.Text = "вопрос №3";
-                btn_2.Text = "вопрос №4";
+                btn_1.Text = v3;
+                btn_2.Text = v4;
             }
-            else if (btn_1.Text == "вопрос №3")
+            else if (btn_1.Text == v3)
             {
                 Name_psycho = Name_psycho + "N";
-                btn_1.Text = "вопрос №7";
-                btn_2.Text = "вопрос №8";
+                btn_1.Text = v7;
+                btn_2.Text = v8;
             }
-            else if (btn_1.Text == "вопрос №7")
+            else if (btn_1.Text == v7)
             {
                 Name_psycho = Name_psycho + "E";
-                btn_1.Text = "вопрос №15";
-                btn_2.Text = "вопрос №16";
+                btn_1.Text = v15;
+                btn_2.Text = v16;
             }
-            else if (btn_1.Text == "вопрос №9")
+            else if (btn_1.Text == v9)
             {
                 Name_psycho = Name_psycho + "E";
-                btn_1.Text = "вопрос №19";
-                btn_2.Text = "вопрос №20";
+                btn_1.Text = v19;
+                btn_2.Text = v20;
             }
-            else if (btn_1.Text == "вопрос №5")
+            else if (btn_1.Text == v5)
             {
                 Name_psycho = Name_psycho + "T";
-                btn_1.Text = "вопрос №11";
-                btn_2.Text = "вопрос №12";
+                btn_1.Text = v11;
+                btn_2.Text = v12;
             }
-            else if (btn_1.Text == "вопрос №11")
+            else if (btn_1.Text == v11)
             {
                 Name_psycho = Name_psycho + "E";
-                btn_1.Text = "вопрос №23";
-                btn_2.Text = "вопрос №24";
+                btn_1.Text = v23;
+                btn_2.Text = v24;
             }
-            else if (btn_1.Text == "вопрос №13")
+            else if (btn_1.Text == v13)
             {
                 Name_psycho = Name_psycho + "E";
-                btn_1.Text = "вопрос №27";
-                btn_2.Text = "вопрос №28";
+                btn_1.Text = v27;
+                btn_2.Text = v28;
             }
-            else if (btn_1.Text == "вопрос №15")
+            else if (btn_1.Text == v15)
             {
                 Hide();
                 Name_psycho = Name_psycho + "T";
@@ -74,7 +110,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №17")
+            else if (btn_1.Text == v17)
             {
                 Hide();
                 Name_psycho = Name_psycho + "T";
@@ -85,7 +121,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №19")
+            else if (btn_1.Text == v19)
             {
                 Hide();
                 Name_psycho = Name_psycho + "T";
@@ -96,7 +132,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №21")
+            else if (btn_1.Text == v21)
             {
                 Hide();
                 Name_psycho = Name_psycho + "T";
@@ -107,18 +143,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №23")
-            {
-                Hide();
-                Name_psycho = Name_psycho + "N";
-                Form2 newForm = new Form2
-                {
-                    Owner = this
-                };
-                newForm.ShowDialog();
-                Close();
-            }
-            else if (btn_1.Text == "вопрос №25")
+            else if (btn_1.Text == v23)
             {
                 Hide();
                 Name_psycho = Name_psycho + "N";
@@ -129,7 +154,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №27")
+            else if (btn_1.Text == v25)
             {
                 Hide();
                 Name_psycho = Name_psycho + "N";
@@ -140,7 +165,18 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_1.Text == "вопрос №29")
+            else if (btn_1.Text == v27)
+            {
+                Hide();
+                Name_psycho = Name_psycho + "N";
+                Form2 newForm = new Form2
+                {
+                    Owner = this
+                };
+                newForm.ShowDialog();
+                Close();
+            }
+            else if (btn_1.Text == v29)
             {
                 Hide();
                 Name_psycho = Name_psycho + "N";
@@ -155,49 +191,49 @@ namespace PsychoApp
 
         private void Btn_2_Click(object sender, EventArgs e)
         {
-            if (btn_2.Text == "вопрос №2")
+            if (btn_2.Text == v2)
             {
                 Name_psycho = Name_psycho + "J";
-                btn_1.Text = "вопрос №5";
-                btn_2.Text = "вопрос №6";
+                btn_1.Text = v5;
+                btn_2.Text = v6;
             }
-            else if (btn_2.Text == "вопрос №4")
+            else if (btn_2.Text == v4)
             {
                 Name_psycho = Name_psycho + "S";
-                btn_1.Text = "вопрос №9";
-                btn_2.Text = "вопрос №10";
+                btn_1.Text = v9;
+                btn_2.Text = v10;
             }
-            else if (btn_2.Text == "вопрос №8")
+            else if (btn_2.Text == v8)
             {
                 Name_psycho = Name_psycho + "I";
-                btn_1.Text = "вопрос №17";
-                btn_2.Text = "вопрос №18";
+                btn_1.Text = v17;
+                btn_2.Text = v18;
             }
-            else if (btn_2.Text == "вопрос №10")
+            else if (btn_2.Text == v10)
             {
                 Name_psycho = Name_psycho + "I";
-                btn_1.Text = "вопрос №21";
-                btn_2.Text = "вопрос №22";
+                btn_1.Text = v21;
+                btn_2.Text = v22;
             }
-            else if (btn_2.Text == "вопрос №6")
+            else if (btn_2.Text == v6)
             {
                 Name_psycho = Name_psycho + "F";
-                btn_1.Text = "вопрос №13";
-                btn_2.Text = "вопрос №14";
+                btn_1.Text = v13;
+                btn_2.Text = v14;
             }
-            else if (btn_2.Text == "вопрос №12")
+            else if (btn_2.Text == v12)
             {
                 Name_psycho = Name_psycho + "I";
-                btn_1.Text = "вопрос №25";
-                btn_2.Text = "вопрос №26";
+                btn_1.Text = v25;
+                btn_2.Text = v26;
             }
-            else if (btn_2.Text == "вопрос №14")
+            else if (btn_2.Text == v14)
             {
                 Name_psycho = Name_psycho + "I";
-                btn_1.Text = "вопрос №29";
-                btn_2.Text = "вопрос №30";
+                btn_1.Text = v29;
+                btn_2.Text = v30;
             }
-            else if (btn_2.Text == "вопрос №16")
+            else if (btn_2.Text == v16)
             {
                 Hide();
                 Name_psycho = Name_psycho + "F";
@@ -208,7 +244,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №18")
+            else if (btn_2.Text == v18)
             {
                 Hide();
                 Name_psycho = Name_psycho + "F";
@@ -219,7 +255,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №20")
+            else if (btn_2.Text == v20)
             {
                 Hide();
                 Name_psycho = Name_psycho + "F";
@@ -230,7 +266,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №22")
+            else if (btn_2.Text == v22)
             {
                 Hide();
                 Name_psycho = Name_psycho + "F";
@@ -241,18 +277,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №24")
-            {
-                Hide();
-                Name_psycho = Name_psycho + "S";
-                Form2 newForm = new Form2
-                {
-                    Owner = this
-                };
-                newForm.ShowDialog();
-                Close();
-            }
-            else if (btn_2.Text == "вопрос №26")
+            else if (btn_2.Text == v24)
             {
                 Hide();
                 Name_psycho = Name_psycho + "S";
@@ -263,7 +288,7 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №28")
+            else if (btn_2.Text == v26)
             {
                 Hide();
                 Name_psycho = Name_psycho + "S";
@@ -274,7 +299,18 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            else if (btn_2.Text == "вопрос №30")
+            else if (btn_2.Text == v28)
+            {
+                Hide();
+                Name_psycho = Name_psycho + "S";
+                Form2 newForm = new Form2
+                {
+                    Owner = this
+                };
+                newForm.ShowDialog();
+                Close();
+            }
+            else if (btn_2.Text == v30)
             {
                 Hide();
                 Name_psycho = Name_psycho + "S";
@@ -289,10 +325,6 @@ namespace PsychoApp
 
         private void Label1_Click(object sender, EventArgs e)
         {
-        }
+        }        
     }
 }
-
-
-
-//btn_2.Text = "вопрос №4

@@ -1,4 +1,6 @@
-﻿namespace PsychoApp
+﻿using System.Windows.Forms;
+
+namespace PsychoApp
 {
     partial class Form1
     {
@@ -35,7 +37,8 @@
             // 
             // btn_1
             // 
-            this.btn_1.Location = new System.Drawing.Point(27, 156);
+            this.btn_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_1.Location = new System.Drawing.Point(31, 156);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(148, 55);
             this.btn_1.TabIndex = 0;
@@ -45,7 +48,8 @@
             // 
             // btn_2
             // 
-            this.btn_2.Location = new System.Drawing.Point(223, 156);
+            this.btn_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_2.Location = new System.Drawing.Point(205, 156);
             this.btn_2.Name = "btn_2";
             this.btn_2.Size = new System.Drawing.Size(148, 55);
             this.btn_2.TabIndex = 1;
@@ -56,26 +60,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(172, 65);
+            this.label1.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(48, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(305, 28);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "Какой ответ вам ближе всего?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(400, 253);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_2);
             this.Controls.Add(this.btn_1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Психодиагностика";
+            this.TopMost = true;
+            this.TransparencyKey = System.Drawing.Color.DarkRed;
             this.ResumeLayout(false);
             this.PerformLayout();
+            //this.SelectionAlignment = HorizontalAlignment.Center;
 
         }
 
