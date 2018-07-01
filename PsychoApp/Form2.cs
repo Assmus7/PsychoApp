@@ -26,7 +26,6 @@ namespace PsychoApp
             }
             else
             {
-
             }
         }
         
@@ -42,6 +41,7 @@ namespace PsychoApp
         {
             Form1 g = (Form1)Owner;
             label1.Text = g.Name_psycho;
+            textBox1.Text = g.Name_psycho;
         }
     }
 }
