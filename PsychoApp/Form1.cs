@@ -37,7 +37,7 @@ namespace PsychoApp
         {
             InitializeComponent();
 
-            btn_1.Text = GetString(1, "questions.txt", Encoding.UTF8);
+            btn_1.Text = GetString(1, "questions.txt", Encoding.Default);
             btn_2.Text = GetString(2, "questions.txt", Encoding.Default);
             label1.Text = GetString(0, "questions.txt", Encoding.Default);
 
