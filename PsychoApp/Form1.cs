@@ -10,11 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 using System.Text.RegularExpressions;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
     public partial class Form1 : Form
     {
+        
         public string Name_psycho { get; set; }
 
         public string GetString(int numberString, string filePath, Encoding encoding)
@@ -33,7 +35,7 @@ namespace PsychoApp
         public Form1()
         {
             InitializeComponent();
-            btn_1.Text = GetString(1, "questions.txt", Encoding.UTF8);
+            btn_1.Text = GetString(1, "questions.txt", Encoding.Default);
             btn_2.Text = GetString(2, "questions.txt", Encoding.Default);
             label1.Text = GetString(0, "questions.txt", Encoding.Default);
         }
@@ -460,15 +462,6 @@ namespace PsychoApp
                 newForm.ShowDialog();
                 Close();
             }
-            //Regex myReg0 = new Regex("E|I");
-            //Regex myReg1 = new Regex("S|N");
-            //Regex myReg2 = new Regex("T|F");
-            //Regex myReg3 = new Regex("P|J");
-            //Match match0 = myReg0.Match(Name_psycho);
-            //Match match1 = myReg1.Match(Name_psycho);
-            //Match match2 = myReg2.Match(Name_psycho);
-            //Match match3 = myReg3.Match(Name_psycho);
-            //EndResult = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
         }
 
         private void Label1_Click(object sender, EventArgs e)

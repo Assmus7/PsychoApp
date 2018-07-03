@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
@@ -16,6 +17,7 @@ namespace PsychoApp
         {
             InitializeComponent();
             textBox1.UseSystemPasswordChar = true;
+            
         }
         public int NamePeople { get; set; }
         public string NumberOfGender { get; set; }
@@ -29,6 +31,11 @@ namespace PsychoApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form2 newForm2 = new Form2
+            {
+                Owner = this
+            };
+
             string passJulia = "123";
             string passSergei = "234";
             string passZhenya = "345";

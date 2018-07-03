@@ -8,48 +8,48 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.IO;
+using OfficeOpenXml;
+
 
 namespace PsychoApp
 {
     public partial class Form2 : Form
     {
-
-        //Form1 g = (Form1)Owner;
-        //Regex myReg0 = new Regex("E|I");
-        //Regex myReg1 = new Regex("S|N");
-        //Regex myReg2 = new Regex("T|F");
-        //Regex myReg3 = new Regex("P|J");
-        //Match match0 = myReg0.Match(g.Name_psycho);
-        //Match match1 = myReg1.Match(g.Name_psycho);
-        //Match match2 = myReg2.Match(g.Name_psycho);
-        //Match match3 = myReg3.Match(g.Name_psycho);
-        //string YeahBoy = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-
+        public int NamePeople1 { get; set; }
+        public int NamePeople2 { get; set; }
+        public int NamePeople3 { get; set; }
+        public int NamePeople4 { get; set; }
         public Form2()
         {
             InitializeComponent();
-            //g.Name_psycho
-
-
-            //string a = ((Form1)Owner).Name_psycho;
-            //Regex myReg0 = new Regex("E|I");
-            //Regex myReg1 = new Regex("S|N");
-            //Regex myReg2 = new Regex("T|F");
-            //Regex myReg3 = new Regex("P|J");
-            //Match match0 = myReg0.Match(a);
-            //Match match1 = myReg1.Match(a);
-            //Match match2 = myReg2.Match(a);
-            //Match match3 = myReg3.Match(a);
-            //string YeahBoy = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-            //textBox1.Text = YeahBoy;
-
-
         }
         
         private void Btn2_1_Click(object sender, EventArgs e)
         {
+            //Form3 g = (Form3)Owner;
+            NamePeople1 = 1123;
+            NamePeople2 = 4334;
+            NamePeople3 = 5656;
+            NamePeople4 = 878;
+            
+          
             if (MessageBox.Show("Вы уверены?", "Выйти?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
+                
+                using (var excel = new ExcelPackage())
+                {
+                    var ws = excel.Workbook.Worksheets.Add("MyWorksheet");
+
+                    ws.Cells["A1"].Value = NamePeople1;
+                    ws.Cells["B1"].Value = NamePeople2/*g.NumberOfGender*/;
+                    ws.Cells["C1"].Value = NamePeople3;
+                    ws.Cells["D1"].Value = textBox1.Text;
+
+                    excel.SaveAs(new FileInfo("myExcel.xlsx"));
+                }
+
                 Application.Exit();
             }
             else
