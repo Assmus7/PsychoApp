@@ -11,16 +11,16 @@ using System.Text.RegularExpressions;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.IO;
 using OfficeOpenXml;
-
+using Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
     public partial class Form2 : Form
     {
-        public int NamePeople1 { get; set; }
-        public int NamePeople2 { get; set; }
-        public int NamePeople3 { get; set; }
-        public int NamePeople4 { get; set; }
+        public string NamePeople1 { get; set; }
+        public string NamePeople2 { get; set; }
+        public string NamePeople3 { get; set; }
+        public string NamePeople4 { get; set; }
         public Form2()
         {
             InitializeComponent();
@@ -29,28 +29,66 @@ namespace PsychoApp
         private void Btn2_1_Click(object sender, EventArgs e)
         {
             //Form3 g = (Form3)Owner;
-            NamePeople1 = 1123;
-            NamePeople2 = 4334;
-            NamePeople3 = 5656;
-            NamePeople4 = 878;
+            NamePeople1 = "111";
+            NamePeople2 = "333";
+            NamePeople3 = "222";
+            NamePeople4 = "8578";
             
           
             if (MessageBox.Show("Вы уверены?", "Выйти?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                
+
+
+
+
+                //    Excel.Application exApp = new Excel.Application();
+                //    exApp.Visible = false;
+                //    exApp.Workbooks.Add();
+                //    Worksheet workSheet = (Worksheet)exApp.ActiveSheet;
+                //    workSheet.Cells[1, 1] = "№";
+                //    workSheet.Cells[1, 2] = "Имя студента";
+                //    workSheet.Cells[1, 3] = "Группа";
+                //    workSheet.Cells[1, 4] = "Средний балл";
+                //    int rowExcel = 2;
+                //    for (int i = 0; i < NGrants; i++)
+                //{
+                //    workSheet.Cells[rowExcel, "A"] = NamePeople1/*.Rows[i].Cells[0].Value*/;
+                //        workSheet.Cells[rowExcel, "B"] = NamePeople2/*.Rows[i].Cells[1].Value*/;
+                //        workSheet.Cells[rowExcel, "C"] = NamePeople3/*.Rows[i].Cells[2].Value*/;
+                //        workSheet.Cells[rowExcel, "D"] = NamePeople4/*.Rows[i].Cells[4].Value*/;
+                //        ++rowExcel;
+                //}
+
+
+
+
+                //    FileInfo excelFile = new FileInfo("myExcel.xlsx");
+                //exApp.GetSaveAsFilename(excelFile);
+                //workSheet.SaveAs("MyExcel.xls");
+
+                //using (ExcelPackage p = new ExcelPackage(FileInfo))
                 using (var excel = new ExcelPackage())
                 {
-                    var ws = excel.Workbook.Worksheets.Add("MyWorksheet");
+                    var ws = excel.Workbook.Worksheets.Add("MyResult");
+
+                    
 
                     ws.Cells["A1"].Value = NamePeople1;
                     ws.Cells["B1"].Value = NamePeople2/*g.NumberOfGender*/;
-                    ws.Cells["C1"].Value = NamePeople3;
-                    ws.Cells["D1"].Value = textBox1.Text;
+                    var _ws = excel.Workbook.Worksheets[1];
+                    int iRows = _ws.Dimension.Rows;             //считает кол-во строк
+                    int iColumns = _ws.Dimension.Columns;       //считает кол-во столбцов
+                    ws.Cells["E1"].Value = iRows;
+                    ws.Cells["F1"].Value = iColumns;
 
-                    excel.SaveAs(new FileInfo("myExcel.xlsx"));
+                    //ws.Cells["D11"].Value = rowCnt;
+
+                    excel.SaveAs(new FileInfo("myExcel2.xlsx"));
+                    //FileInfo excelFile = new FileInfo("myExcel.xlsx");
+                    //excel.SaveAs(excelFile);
                 }
 
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             else
             {
