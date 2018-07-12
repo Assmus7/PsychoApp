@@ -1,6 +1,6 @@
 ﻿namespace PsychoApp
 {
-    partial class Form2
+    partial class FormResult
     {
         /// <summary>
         /// Required designer variable.

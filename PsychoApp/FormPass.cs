@@ -11,16 +11,16 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
-    public partial class Form3 : Form
+    public partial class FormPass : Form
     {
-        public Form3()
+        public FormPass()
         {
             InitializeComponent();
             textBox1.UseSystemPasswordChar = true;
             
         }
         public int NamePeople { get; set; }
-        public string NumberOfGender { get; set; }
+        public int NumberOfGender { get; set; }
         public int CountEntreJulia { get; set; }
         public int CountEntreSergei { get; set; }
         public int CountEntreZhenya { get; set; }
@@ -31,10 +31,7 @@ namespace PsychoApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 newForm2 = new Form2
-            {
-                Owner = this
-            };
+            
 
             string passJulia = "123";
             string passSergei = "234";
@@ -44,24 +41,23 @@ namespace PsychoApp
 
             if (textBox1.Text == passJulia && (radioButton1.Checked || radioButton2.Checked))
             {
+
                 if (radioButton1.Checked)
                 {
-                    NumberOfGender = "1";
+                    NumberOfGender = 1;
+
                 }
                 else if(radioButton2.Checked)
                 {
-                    NumberOfGender = "2";
+                    NumberOfGender = 2;
                 }               
                 NamePeople = 1;
-                CountEntreJulia += 1;
                 Hide();
-                //Form2 newForm2 = new Form2
-                //{
-                //    Owner = this
-                //};
-                Form1 newForm1 = new Form1
+                FormTest newForm1 = new FormTest
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople
                 };
                 newForm1.ShowDialog();
                 Close();
@@ -70,18 +66,19 @@ namespace PsychoApp
             {
                 if (radioButton1.Checked)
                 {
-                    NumberOfGender = "1";
+                    NumberOfGender = 1;
                 }
                 else
                 {
-                    NumberOfGender = "2";
+                    NumberOfGender = 2;
                 }
                 NamePeople = 2;
-                CountEntreSergei += 1;
                 Hide();
-                Form1 newForm1 = new Form1
+                FormTest newForm1 = new FormTest
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople
                 };
                 newForm1.ShowDialog();
                 Close();
@@ -90,18 +87,20 @@ namespace PsychoApp
             {
                 if (radioButton1.Checked)
                 {
-                    NumberOfGender = "1";
+                    NumberOfGender = 1;
                 }
                 else
                 {
-                    NumberOfGender = "2";
+                    NumberOfGender = 2;
                 }
                 NamePeople = 3;
                 CountEntreZhenya += 1;
                 Hide();
-                Form1 newForm1 = new Form1
+                FormTest newForm1 = new FormTest
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople
                 };
                 newForm1.ShowDialog();
                 Close();
@@ -110,18 +109,20 @@ namespace PsychoApp
             {
                 if (radioButton1.Checked)
                 {
-                    NumberOfGender = "1";
+                    NumberOfGender = 1;
                 }
                 else
                 {
-                    NumberOfGender = "2";
+                    NumberOfGender = 2;
                 }
                 NamePeople = 4;
                 CountEntreDmitriy += 1;
                 Hide();
-                Form1 newForm1 = new Form1
+                FormTest newForm1 = new FormTest
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople
                 };
                 newForm1.ShowDialog();
                 Close();
@@ -130,18 +131,20 @@ namespace PsychoApp
             {                
                 if (radioButton1.Checked)
                 {
-                    NumberOfGender = "1";
+                    NumberOfGender = 1;
                 }
                 else if(radioButton2.Checked)
                 {
-                    NumberOfGender = "2";
+                    NumberOfGender = 2;
                 }                
                 NamePeople = 5;
                 CountEntreAlexey += 1;
                 Hide();
-                Form1 newForm1 = new Form1
+                FormTest newForm1 = new FormTest
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople
                 };
                 newForm1.ShowDialog();
                 Close();

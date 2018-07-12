@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
+//using Microsoft.Office.Interop.Excel;
 using System.Text.RegularExpressions;
-using Excel = Microsoft.Office.Interop.Excel;
+//using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
-    public partial class Form1 : Form
+    public partial class FormTest : Form
     {
         
         public string Name_psycho { get; set; }
+        public int NumberOfGender { get; internal set; }
+        public int NamePeople { get; internal set; }
 
         public string GetString(int numberString, string filePath, Encoding encoding)
         {
@@ -32,7 +34,7 @@ namespace PsychoApp
 
             return newString;
         }
-        public Form1()
+        public FormTest()
         {
             InitializeComponent();
             btn_1.Text = GetString(1, "questions.txt", Encoding.Default);
@@ -104,9 +106,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -124,9 +129,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -144,9 +152,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -164,9 +175,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -184,9 +198,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -204,9 +221,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -224,9 +244,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -244,9 +267,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -317,9 +343,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -337,9 +366,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -357,9 +389,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -377,9 +412,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -397,9 +435,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -417,9 +458,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -437,9 +481,12 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2
+                FormResult newForm = new FormResult
                 {
-                    Owner = this
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
                 };
                 newForm.ShowDialog();
                 Close();
@@ -457,8 +504,15 @@ namespace PsychoApp
                 Match match2 = myReg2.Match(Name_psycho);
                 Match match3 = myReg3.Match(Name_psycho);
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
-                Form2 newForm = new Form2();
-                newForm.Owner = this;
+                //FormResult newForm = new FormResult();
+                //newForm.Owner = this;
+                FormResult newForm = new FormResult
+                {
+                    Owner = this,
+                    NumberOfGender = NumberOfGender,
+                    NamePeople = NamePeople,
+                    Name_psycho = Name_psycho
+                };
                 newForm.ShowDialog();
                 Close();
             }

@@ -1,6 +1,6 @@
 ﻿namespace PsychoApp
 {
-    partial class Form3
+    partial class FormPass
     {
         /// <summary>
         /// Required designer variable.

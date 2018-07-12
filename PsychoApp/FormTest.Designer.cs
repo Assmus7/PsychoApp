@@ -2,7 +2,7 @@
 
 namespace PsychoApp
 {
-    partial class Form1
+    partial class FormTest
     {
         /// <summary>
         /// Обязательная переменная конструктора.
