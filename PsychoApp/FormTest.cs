@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.ComponentModel;
-//using System.Data;
-//using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
 using System.Windows.Forms;
-//using Microsoft.Office.Interop.Excel;
 using System.Text.RegularExpressions;
-//using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
@@ -108,7 +102,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -131,7 +124,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -154,7 +146,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -177,7 +168,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -200,7 +190,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -223,7 +212,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -246,7 +234,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -269,7 +256,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -345,7 +331,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -368,7 +353,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -391,7 +375,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -414,7 +397,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -437,7 +419,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -460,7 +441,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho
@@ -483,7 +463,6 @@ namespace PsychoApp
                 Name_psycho = string.Format("{0}{1}{2}{3}", match0, match1, match2, match3);
                 FormResult newForm = new FormResult
                 {
-                    Owner = this,
                     NumberOfGender = NumberOfGender,
                     NamePeople = NamePeople,
                     Name_psycho = Name_psycho

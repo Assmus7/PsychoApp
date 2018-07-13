@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PsychoApp
 {
@@ -34,9 +26,9 @@ namespace PsychoApp
             
 
             string passJulia = "123";
-            string passSergei = "234";
+            string passSergei = "18031990";
             string passZhenya = "345";
-            string passDmitriy = "456";
+            string passDmitriy = "119160s";
             string passAlexey = "567";
 
             if (textBox1.Text == passJulia && (radioButton1.Checked || radioButton2.Checked))

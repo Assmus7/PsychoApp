@@ -59,7 +59,7 @@ namespace PsychoApp
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Sitka Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(145, 42);
             this.label1.Name = "label1";
@@ -70,7 +70,7 @@ namespace PsychoApp
             this.label1.UseCompatibleTextRendering = true;
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // Form1
+            // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,7 +81,7 @@ namespace PsychoApp
             this.Controls.Add(this.btn_2);
             this.Controls.Add(this.btn_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "FormTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Психодиагностика";
             this.TopMost = true;
